@@ -21,7 +21,7 @@ class PlanetController {
             Planet(name: "Neptune", imageName: "neptune"),
         ]
         
-        let shouldShowPluto = UserDefaults.standard.bool(forKey: "shouldShowPlutoKey")
+        let shouldShowPluto = UserDefaults.standard.bool(forKey: .shouldShowPlutoKey)
         
         if shouldShowPluto {
             temp.append(Planet(name: "Pluto", imageName: "pluto"))
