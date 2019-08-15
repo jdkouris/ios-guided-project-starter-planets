@@ -136,7 +136,11 @@
                                 <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="u2x-UC-0lb"/>
-                                    <barButtonItem systemItem="done" id="ujf-Wl-nsg"/>
+                                    <barButtonItem systemItem="done" id="ujf-Wl-nsg">
+                                        <connections>
+                                            <segue destination="6d6-NW-uVY" kind="unwind" unwindAction="unwindToPlanetsCollectionViewController:" id="Qnt-eo-RVu"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="elH-OY-uhd">
@@ -150,6 +154,9 @@
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GQH-CF-eAo">
                                         <rect key="frame" x="333" y="0.0" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="changeShouldShowPluto:" destination="idu-Ph-53J" eventType="valueChanged" id="QeM-dk-J9a"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                             </stackView>
@@ -166,8 +173,12 @@
                         <viewLayoutGuide key="safeArea" id="vO7-rx-BKQ"/>
                     </view>
                     <navigationItem key="navigationItem" id="88H-bg-QkB"/>
+                    <connections>
+                        <outlet property="shouldShowPlutoSwitch" destination="GQH-CF-eAo" id="55Q-KP-Z45"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fa8-Yo-r6G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="6d6-NW-uVY" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1765" y="-42"/>
         </scene>
