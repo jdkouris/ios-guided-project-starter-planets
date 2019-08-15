@@ -55,10 +55,13 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="120" height="140"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RP5-sm-N3w">
-                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="119.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3i7-pm-XaO">
-                                                            <rect key="frame" x="0.0" y="119.5" width="120" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="120" width="120" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20" id="vCG-T1-UYw"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -82,6 +85,10 @@
                                     <constraint firstItem="pwK-Gj-leN" firstAttribute="top" secondItem="Ad4-Yb-axh" secondAttribute="top" id="gbE-6q-yC1"/>
                                     <constraint firstAttribute="trailing" secondItem="pwK-Gj-leN" secondAttribute="trailing" id="yW8-vW-Ogi"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="RP5-sm-N3w" id="B7a-3x-ueQ"/>
+                                    <outlet property="textLabel" destination="3i7-pm-XaO" id="X63-sn-Qix"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
