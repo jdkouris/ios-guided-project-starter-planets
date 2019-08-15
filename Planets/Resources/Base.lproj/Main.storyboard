@@ -139,12 +139,29 @@
                                     <barButtonItem systemItem="done" id="ujf-Wl-nsg"/>
                                 </items>
                             </toolbar>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="101" translatesAutoresizingMaskIntoConstraints="NO" id="elH-OY-uhd">
+                                <rect key="frame" x="16" y="104" width="382" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is Pluto still a planet?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wlh-sn-6Qg">
+                                        <rect key="frame" x="0.0" y="0.0" width="232" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GQH-CF-eAo">
+                                        <rect key="frame" x="333" y="0.0" width="51" height="31"/>
+                                    </switch>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="elH-OY-uhd" firstAttribute="top" secondItem="vO7-rx-BKQ" secondAttribute="top" constant="16" id="0sg-jO-0uu"/>
                             <constraint firstItem="4qo-UZ-rEj" firstAttribute="leading" secondItem="vO7-rx-BKQ" secondAttribute="leading" id="T7T-fb-Nxs"/>
+                            <constraint firstItem="vO7-rx-BKQ" firstAttribute="trailing" secondItem="elH-OY-uhd" secondAttribute="trailing" constant="16" id="hCh-yn-tgK"/>
                             <constraint firstItem="4qo-UZ-rEj" firstAttribute="trailing" secondItem="vO7-rx-BKQ" secondAttribute="trailing" id="lRj-N3-VSp"/>
                             <constraint firstItem="4qo-UZ-rEj" firstAttribute="bottom" secondItem="vO7-rx-BKQ" secondAttribute="bottom" id="rNV-XJ-nrW"/>
+                            <constraint firstItem="elH-OY-uhd" firstAttribute="leading" secondItem="vO7-rx-BKQ" secondAttribute="leading" constant="16" id="vRA-pa-taN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vO7-rx-BKQ"/>
                     </view>
